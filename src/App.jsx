@@ -5,13 +5,13 @@ function App() {
   
 
   return (
-    <>
+    <div className="w-full h-full absolute ">
       <Routes>
         <Route element={<Navbar/>}>
           <Route path="/" element={<Home/>}/>
         </Route>
       </Routes>
-    </>
+    </div>
   )
 }
 
