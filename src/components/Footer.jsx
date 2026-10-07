@@ -5,7 +5,7 @@ import { Link } from "react-router";
 const Footer = () => {
   return (
     <div className="w-full bg-slate-900 text-white">
-        <div className="w-full flex p-4">
+        <div className="w-full flex flex-col gap-8 md:flex-row p-4 ">
             <div className="w-full md:w-1/2 flex flex-col items-center">
                 <h2 className="text-center text-2xl mb-4">Sitemap</h2>
                 <li className='list-none w-full flex items-center justify-center gap-4 p-4
