@@ -8,6 +8,7 @@ import Desktop from "./components/Desktop";
 import SEO from "./components/SEO";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import FloatingChat from "./components/FloatingChat";
 function App() {
   
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/contact" element={<Contact/>}/>
         </Route>
       </Routes>
+      < FloatingChat/>
       <Footer/>
     </div>
   )
