@@ -1,7 +1,8 @@
 import {useState} from 'react';
 import {Outlet, Link} from 'react-router';
-import { FaSearch } from 'react-icons/fa';
+import { FaSearch, FaHome, FaGlobe, FaMobile, FaDesktop, FaChartLine, FaEnvelope } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { BsInfoCircle } from 'react-icons/bs';
 import Logo from '../assets/images/abacus logo.png';
 
 const Navbar = () => {
@@ -43,39 +44,46 @@ const Navbar = () => {
                 ${isMenuOpen ? "opacity-100" : "opacity-0"}`}
                 style={{transition: "transform 0.3s ease, opacity 0.3s ease"}}
             >
-                <li className='list-none w-full text-center p-4
+                <li className='list-none w-full flex items-center justify-center gap-4 p-4
                     hover:bg-sky-400 hover:text-white transition-all cursor-pointer'
                 >
-                    Home
+                    <FaHome size={24}/>
+                    <Link to="/">Home</Link>
                 </li>
-                <li className='list-none w-full text-center p-4
+                <li className='list-none w-full flex items-center justify-center gap-4 p-4
                     hover:bg-sky-400 hover:text-white transition-all cursor-pointer'
                 >
+                    <BsInfoCircle size={24}/>
                     <Link to="/about">About Us</Link>
                 </li>
-                <li className='list-none w-full text-center p-4
+                <li className='list-none w-full flex items-center justify-center gap-4 p-4
                     hover:bg-sky-400 hover:text-white transition-all cursor-pointer'
                 >
+                    <FaGlobe size={24}/>
                     <Link to="/services/web">Web</Link>
                 </li>
-                <li className='list-none w-full text-center p-4
+                <li className='list-none w-full flex items-center justify-center gap-4 p-4
                     hover:bg-sky-400 hover:text-white transition-all cursor-pointer'
                 >
+                    <FaMobile size={24}/>
                     <Link to="/services/mobile">Mobile</Link>
                 </li>
-                <li className='list-none w-full text-center p-4
+                <li className='list-none w-full flex items-center justify-center gap-4 p-4
                     hover:bg-sky-400 hover:text-white transition-all cursor-pointer'
                 >
+                    <FaDesktop size={24}/>
                     <Link to="/services/desktop">Desktop</Link>
                 </li>
-                <li className='list-none w-full text-center p-4
+                <li className='list-none w-full flex items-center justify-center gap-4 p-4
                     hover:bg-sky-400 hover:text-white transition-all cursor-pointer'
                 >
+                    <FaChartLine size={24}/>
                     <Link to="/services/seo">SEO</Link>
                 </li>
-                <li className='list-none w-full text-center p-4
+                <li className='list-none w-full flex items-center justify-center gap-4 p-4
                     hover:bg-sky-400 hover:text-white transition-all cursor-pointer'
                 >
+                    <FaEnvelope size={24}/>
                     <Link to="/contact">Contact</Link>
                 </li>
             </div>
