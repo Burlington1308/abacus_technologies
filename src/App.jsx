@@ -7,6 +7,7 @@ import Mobile from "./components/Mobile";
 import Desktop from "./components/Desktop";
 import SEO from "./components/SEO";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 function App() {
   
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact/>}/>
         </Route>
       </Routes>
+      <Footer/>
     </div>
   )
 }
