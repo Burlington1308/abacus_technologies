@@ -1,4 +1,4 @@
-import { Link } from "react-router"
+import { Link } from "react-router";
 
 const FloatingChat = () => {
   return (
@@ -9,4 +9,4 @@ const FloatingChat = () => {
   )
 }
 
-export default FloatingChat
+export default FloatingChat;

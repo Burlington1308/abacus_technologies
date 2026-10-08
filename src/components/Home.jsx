@@ -1,5 +1,5 @@
 import bgImage from '../assets/images/office.jpg';
-import { FaCode, FaBusinessTime } from 'react-icons/fa';
+import { FaCode, FaBusinessTime, FaSearch, FaChartBar, FaMousePointer, FaMobile, FaLaptop } from 'react-icons/fa';
 import { BrainCircuit } from 'lucide-react';
 
 const Home = () => {
@@ -59,6 +59,62 @@ const Home = () => {
             Get solutions that get past challenges by innovating 
             and applying novel thinking to problems. Our team thinks outside 
             the box to deliver solutions.
+          </p>
+        </div>
+      </div>
+
+      <div className='w-full p-16 text-slate-600'>
+        <h2 className='text-center text-3xl font-bold text-slate-800'>Claim Your Place In A Digital World</h2>
+        <p className='text-center py-4'>
+          The whole world is now online. Your brand should be there too.
+          We help you build a visible, trusted and intentional home base on the digital plane.
+        </p>
+        <p className='text-center py-4'>
+          From a responsive website that is designed to be you 24/7 digital storefront, 
+          your town square, brand communication outlet or whatever you need it to be, to mobile applications,
+          desktop applications, a Google Business Profile to cover local searches, SEO to ensure that 
+          you are at the very top of responses for what your potential clients and customers are looking for.
+        </p>
+        <p className='text-center py-4'>
+          We assist you in finding your own voice, building the software 
+          tools that make your job easier and more efficient, all with your input every step of the way.
+        </p>
+      </div>
+
+      <div className='w-full px-16 py-4 text-slate-600 grid grid-cols-1 md:grid-cols-3 gap-4'>
+        <div className="w-full md:basis-[calc(33.333%-1rem)] border border-slate-600 border-1 rounded-xl flex flex-col items-center justify-center p-8">
+          <FaSearch size={80}/>
+          <h3 className='text-2xl text-semibold'>Show up in searches</h3>
+          <p>
+            Boost your online visibility with SEO-optimized architecture built straight into your code.
+          </p>
+        </div>
+        <div className="w-full md:basis-[calc(33.333%-1rem)] border-slate-600 border-1 rounded-xl flex flex-col items-center justify-center p-8">
+          <FaMousePointer size={80}/>
+          <h3 className='text-2xl text-semibold'>Engage your audience</h3>
+          <p>
+            Deliver flawless, lightning-fast user experiences that keep visitors hooked on any device.
+          </p>
+        </div>
+        <div className="w-full md:basis-[calc(33.333%-1rem)] border border-slate-600 border-1 rounded-xl flex flex-col items-center justify-center p-8">
+          <FaChartBar size={80}/>
+          <h3 className='text-2xl text-semibold'>Convert clicks to customers</h3>
+          <p>
+            Turn traffic into measurable revenue with seamless checkout flows and data-driven UX.
+          </p>
+        </div>
+        <div className="w-full md:basis-[calc(33.333%-1rem)] border border-slate-600 border-1 rounded-xl flex flex-col items-center justify-center p-8">
+          <FaMobile size={80}/>
+          <h3 className='text-2xl text-semibold'>Go mobile first</h3>
+          <p>
+            Launch native or cross-platform iOS and Android apps built for performance and high user retention.
+          </p>
+        </div>
+        <div className="w-full md:basis-[calc(33.333%-1rem)] border border-slate-600 border-1 rounded-xl flex flex-col items-center justify-center p-8">
+          <FaLaptop size={80}/>
+          <h3 className='text-2xl text-semibold'>Dominate the desktop</h3>
+          <p>
+            Build robust, high-performance Windows and macOS desktop applications for complex professional workflows.
           </p>
         </div>
       </div>
