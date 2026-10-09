@@ -46,7 +46,7 @@ const Footer = () => {
                 </li>
             </div>
 
-            <div className="w-full md:w-1/2 flex flex-col  items-center">
+            <div id="footer_contact" className="w-full md:w-1/2 flex flex-col  items-center">
                 <h2 className="text-center text-2xl mb-4">Contact Us</h2>
 
                 <li className='list-none w-full flex items-center justify-center gap-4 p-4
