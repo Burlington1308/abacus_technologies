@@ -9,6 +9,7 @@ import SEO from "./components/SEO";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import FloatingChat from "./components/FloatingChat";
+import NotFound from "./components/NotFound";
 function App() {
   
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/services/desktop" element={<Desktop/>}/>
           <Route path="/services/seo" element={<SEO/>}/>
           <Route path="/contact" element={<Contact/>}/>
+          <Route path="*" element={<NotFound/>}/>
         </Route>
       </Routes>
       < FloatingChat/>
