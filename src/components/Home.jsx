@@ -1,4 +1,4 @@
-import bgImage from '../assets/images/office.jpg';
+import bgImage from '../assets/images/ofspace.jpg';
 import { FaCode, FaBusinessTime, FaSearch, FaChartBar, FaMousePointer, FaMobile, FaLaptop } from 'react-icons/fa';
 import { BrainCircuit } from 'lucide-react';
 
