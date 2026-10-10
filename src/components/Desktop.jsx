@@ -7,7 +7,7 @@ const Desktop = () => {
   return (
     <div className="min-h-dvh w-full p-16
       justify-center text-slate-800">
-        <div className="flex shadow-2xl max-h-[70vh] rounded-2xl">
+        <div className="flex shadow-2xl md:max-h-[70vh] rounded-2xl">
           <div className="w-full md:w-1/2 flex flex-col items-center justify-center
             text-center p-8 md:p-20 gap-8 bg-white rounded-2xl
             xl:rounded-tr-none xl:rounded-br-none ">

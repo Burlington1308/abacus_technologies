@@ -7,7 +7,7 @@ const SEO = () => {
   return (
     <div className="min-h-dvh w-full p-16
           justify-center text-slate-800">
-      <div className="flex shadow-2xl max-h-[70vh] rounded-2xl">
+      <div className="flex shadow-2xl h md:max-h-[70vh] rounded-2xl">
         <div className="w-full md:w-1/2 flex flex-col items-center justify-center
             text-center p-8 md:p-20 gap-8 bg-white rounded-2xl
             xl:rounded-tr-none xl:rounded-br-none ">
@@ -118,7 +118,7 @@ const SEO = () => {
       </div>
 
       <div className="bg-sky-400 rounded-2xl text-white p-8 flex flex-col items-center justify-around">
-        <h1 className="text-3xl font-semibold">Ready to Grow Your Digital Footprint?</h1>
+        <h1 className="text-3xl font-semibold pb-6">Ready to Grow Your Digital Footprint?</h1>
         <h2 className="text-2xl font-semibold text-center">Stop letting your competitors take your spot on Google. Let the experts at Abacus Technologies build an SEO strategy that drives real business growth.</h2>
         <a href="https://wa.me/27619941652" className="py-2 px-4 bg-red-600 mt-4 rounded-md hover:bg-red-700">Get Free Consult</a>
       </div>

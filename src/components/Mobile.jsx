@@ -8,7 +8,7 @@ const Mobile = () => {
   return (
     <div className="min-h-dvh w-full p-16
       justify-center text-slate-800">
-        <div className="flex shadow-2xl max-h-[70vh] rounded-2xl">
+        <div className="flex shadow-2xl md:max-h-[70vh] rounded-2xl">
           <div className="w-full md:w-1/2 flex flex-col items-center justify-center
             text-center p-8 md:p-20 gap-8 bg-white rounded-2xl
             xl:rounded-tr-none xl:rounded-br-none ">
@@ -112,7 +112,7 @@ const Mobile = () => {
               We handle store deployment, performance monitoring, and ongoing feature updates.
           </p>
         </div>
-        
+
         <div className="bg-sky-400 rounded-2xl text-white p-8 flex flex-col items-center justify-around">
           <h1 className="text-3xl font-semibold">Let’s turn your vision into a cross-platform reality.</h1>
           <h2 className="text-2xl font-semibold"> Partner with Abacus Technologies to launch your mobile app faster and smarter.</h2>
