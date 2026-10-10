@@ -10,12 +10,10 @@ const Navbar = () => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [query, setQuery] = useState("");
-    const [error, setError] =useState("");
     const navigate = useNavigate();
 
     const handleSearch = (e) => {
         e.preventDefault();
-        setError("");
 
         const cleanQuery = query.trim().toLowerCase();
         if (!cleanQuery) return;
@@ -31,7 +29,7 @@ const Navbar = () => {
             navigate(bestMatch.path);
             setQuery(""); // Clear the input
         } else {
-            setError("No matching page found!");
+            alert("Not found!!");
         }
     }
 
