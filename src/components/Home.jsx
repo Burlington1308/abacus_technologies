@@ -17,11 +17,11 @@ const Home = () => {
             </p>
 
             <div className="flex flex-col gap-4 md:flex-row mt-16 w-1/2 items-center justify-around">
-              <a className='bg-sky-500 py-2 px-4 text-white rounded-md hover:bg-sky-600 transition-all'
+              {/*<a className='bg-sky-500 py-2 px-4 text-white rounded-md hover:bg-sky-600 transition-all'
                 href="https://wa.me/27619941652"
               >
                 Get In Touch
-              </a>
+              </a>*/}
               <a className='bg-red-500 py-2 px-4 text-white rounded-md hover:bg-red-600 transition-all'
                 href="https://wa.me/27619941652"
               >

@@ -58,14 +58,14 @@ const Navbar = () => {
                 <li className='p-3 hover:bg-sky-400 hover:text-white rounded-md transition-all cursor-pointer'><Link to="/contact">Contact</Link></li>
 
             </ul>
-            <div className='relative hidden md:flex items-center justify-center'>
+            <div className='relative flex items-center justify-center'>
                 <FaSearch size={20} 
                     color="gray" 
                     className='absolute left-3 text-2xl text-gray-500 cursor-pointer'
                     onClick={handleSearch}
                 />
                 <input type='text' placeholder='search'
-                    className='py-2 pl-10 rounded-xl border-2
+                    className='py-1 md:py-2 pl-10 rounded-xl border-2
                     border-blue-300 focus:bg-slate-100 focus:outline-sky-500'
                     onChange={(e) => setQuery(e.target.value)}
                     onKeyDown={handleKeyDown}
@@ -81,47 +81,40 @@ const Navbar = () => {
                 ${isMenuOpen ? "opacity-100" : "opacity-0"}`}
                 style={{transition: "transform 0.3s ease, opacity 0.3s ease"}}
             >
-                <li className='list-none w-full flex items-center justify-center gap-4 p-4
+                <li className='list-none w-full flex items-center justify-center  p-4
                     hover:bg-sky-400 hover:text-white transition-all cursor-pointer'
-                >
-                    <FaHome size={24}/>
-                    <Link to="/">Home</Link>
+                >  
+                    <Link to="/" className='w-full flex items-center justify-center gap-4' onClick={() => setIsMenuOpen(false)}><FaHome size={24}/> Home</Link>
                 </li>
                 <li className='list-none w-full flex items-center justify-center gap-4 p-4
                     hover:bg-sky-400 hover:text-white transition-all cursor-pointer'
-                >
-                    <BsInfoCircle size={24}/>
-                    <Link to="/about">About Us</Link>
+                >               
+                    <Link to="/about" className='w-full flex items-center justify-center gap-4' onClick={() => setIsMenuOpen(false)}><BsInfoCircle size={24}/> About Us</Link>
                 </li>
                 <li className='list-none w-full flex items-center justify-center gap-4 p-4
                     hover:bg-sky-400 hover:text-white transition-all cursor-pointer'
-                >
-                    <FaGlobe size={24}/>
-                    <Link to="/services/web">Web</Link>
+                >                    
+                    <Link to="/services/web" className='w-full flex items-center justify-center gap-4' onClick={() => setIsMenuOpen(false)}><FaGlobe size={24}/> Web</Link>
                 </li>
                 <li className='list-none w-full flex items-center justify-center gap-4 p-4
                     hover:bg-sky-400 hover:text-white transition-all cursor-pointer'
-                >
-                    <FaMobile size={24}/>
-                    <Link to="/services/mobile">Mobile</Link>
+                >                    
+                    <Link to="/services/mobile" className='w-full flex items-center justify-center gap-4' onClick={() => setIsMenuOpen(false)}><FaMobile size={24}/> Mobile</Link>
                 </li>
                 <li className='list-none w-full flex items-center justify-center gap-4 p-4
                     hover:bg-sky-400 hover:text-white transition-all cursor-pointer'
-                >
-                    <FaDesktop size={24}/>
-                    <Link to="/services/desktop">Desktop</Link>
+                >                    
+                    <Link to="/services/desktop" className='w-full flex items-center justify-center gap-4' onClick={() => setIsMenuOpen(false)}><FaDesktop size={24}/> Desktop</Link>
                 </li>
                 <li className='list-none w-full flex items-center justify-center gap-4 p-4
                     hover:bg-sky-400 hover:text-white transition-all cursor-pointer'
-                >
-                    <FaChartLine size={24}/>
-                    <Link to="/services/seo">SEO</Link>
+                >                    
+                    <Link to="/services/seo" className='w-full flex items-center justify-center gap-4' onClick={() => setIsMenuOpen(false)}><FaChartLine size={24}/> SEO</Link>
                 </li>
                 <li className='list-none w-full flex items-center justify-center gap-4 p-4
                     hover:bg-sky-400 hover:text-white transition-all cursor-pointer'
-                >
-                    <FaEnvelope size={24}/>
-                    <Link to="/contact">Contact</Link>
+                >                    
+                    <Link to="/contact" className='w-full flex items-center justify-center gap-4' onClick={() => setIsMenuOpen(false)}><FaEnvelope size={24}/> Contact</Link>
                 </li>
             </div>
         </div>
