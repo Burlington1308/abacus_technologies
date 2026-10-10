@@ -1,13 +1,45 @@
 import {useState} from 'react';
-import {Outlet, Link} from 'react-router';
+import {Outlet, Link, useNavigate} from 'react-router';
 import { FaSearch, FaHome, FaGlobe, FaMobile, FaDesktop, FaChartLine, FaEnvelope } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { BsInfoCircle } from 'react-icons/bs';
 import Logo from '../assets/images/abacus logo.png';
+import {pages} from "../assets/Pages"
 
 const Navbar = () => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [query, setQuery] = useState("");
+    const [error, setError] =useState("");
+    const navigate = useNavigate();
+
+    const handleSearch = (e) => {
+        e.preventDefault();
+        setError("");
+
+        const cleanQuery = query.trim().toLowerCase();
+        if (!cleanQuery) return;
+
+        //1. Try to find an exact title match or keyword match
+        const bestMatch = pages.find( page => 
+            page.title.toLowerCase().includes(cleanQuery) || 
+            page.keywords.some(keyword => cleanQuery.includes(keyword))
+        );
+
+        // 2. Redirect if a match is found, otherwise show an error
+        if (bestMatch) {
+            navigate(bestMatch.path);
+            setQuery(""); // Clear the input
+        } else {
+            setError("No matching page found!");
+        }
+    }
+
+    const handleKeyDown = (e) => {
+        if (e.key === "Enter") {
+            handleSearch(e);
+        }
+    }
 
   return (
     <div>
@@ -29,10 +61,17 @@ const Navbar = () => {
 
             </ul>
             <div className='relative hidden md:flex items-center justify-center'>
-                <FaSearch size={20} color="gray" className='absolute left-3 text-2xl text-gray-500'/>
+                <FaSearch size={20} 
+                    color="gray" 
+                    className='absolute left-3 text-2xl text-gray-500 cursor-pointer'
+                    onClick={handleSearch}
+                />
                 <input type='text' placeholder='search'
                     className='py-2 pl-10 rounded-xl border-2
-                    border-blue-300 focus:bg-slate-100 focus:outline-sky-500'/>
+                    border-blue-300 focus:bg-slate-100 focus:outline-sky-500'
+                    onChange={(e) => setQuery(e.target.value)}
+                    onKeyDown={handleKeyDown}
+                />
             </div> 
 
             <GiHamburgerMenu size={30} className='xl:hidden block text-5xl cursor-pointer'
